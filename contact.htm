@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <title>My Web Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="sub-container">
+        <a href="#"><img src="img/logo.png" alt="the eduford_logo"></a>
+            <div class="menu" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.htm">HOME</a></li>
+                    <li><a href="about.htm">ABOUT</a></li>
+                    <li><a href="course.htm">COURSE</a></li>
+                    <li><a href="blog.htm">BLOG</a></li>
+                    <li><a href="contact.htm">CONTACT</a></li>
+                </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            <h1>Contact Us</h1>
+    </section>
+
+    <section class="certificate">
+        <div class="container2">
+            <div>
+                <i class="fa fa-home"></i>
+                <div class="notes">
+                    <h3>XYZ Road, ABC Building</h3>
+                    <p>Narela, New Delhi-110040, IN</p>
+                </div>
+
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <div class="notes">
+                    <h3>+1 (431) 489-1247</h3>
+                    <p>Monday to saturday, 10AM to 6PM</p>
+                </div>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <div class="notes">
+                    <h3>info@University.com</h3>
+                    <p>Main us your query</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="container2">
+            <div class="form">
+                <form>
+                    <div>
+                        <input type="text" name="firstName" placeholder="Username">
+                    </div><br>
+                    <div>
+                        <input type="text" name="email" placeholder="Email">
+                    </div><br>
+                    <div>
+                        <textarea type="text" name="message" placeholder="Your comment"></textarea>
+                    </div><br>
+                    <div class="button"><button><span>POST COMMENT</span></button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about_us">
+        <hr>
+        <div class="container6">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro incidunt odio? Consequuntur,<br>
+                velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a, accusamus temporibus.</p>
+                <div class="icons">
+                    <a href="https://m.facebook.com/people/Horrid-Hanu/100059716728447/?comment_id=Y29tbWVudDoxMDUwNDc1OTE4ODEyNjU2XzEwNTA0ODYwNzg4MTE2NDA%3D"
+                        target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/horridhanu" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/horridhanu/" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-github"></i></a>
+                    <a href="https://www.pinterest.com/horridhanu/" target="_blank" rel="noreferrer noopener"><i
+                            class="fa fa-pinterest"></i></a>
+                </div>
+            <p id="made_with">Made With <i class="fa fa-heart-o"></i> by Matthias Sina</p>
+        </div>
+    </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
